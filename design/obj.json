@@ -1,0 +1,254 @@
+{
+   "_typeName" : "CanvasLayout",
+   "_version" : "VER3",
+   "adjustment" : 0,
+   "box" : {
+      "_typeName" : "PixelBox",
+      "height" : 50.0,
+      "width" : 500.0
+   },
+   "list" : [
+      {
+         "_typeName" : "StaticFilledRect",
+         "box" : {
+            "_typeName" : "RelativeBox",
+            "height" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0.0
+            },
+            "offset" : {
+               "_empty" : true
+            },
+            "width" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0.0
+            }
+         },
+         "color" : [ 0.0, 0.0, 0.0, 1.0 ],
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 1,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            },
+            "vertAlign" : 1,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            }
+         }
+      },
+      {
+         "_typeName" : "StaticFilledRect",
+         "box" : {
+            "_typeName" : "RelativeBox",
+            "height" : {
+               "_typeName" : "RelativeValue",
+               "type" : 3,
+               "value" : 2.0
+            },
+            "offset" : {
+               "_empty" : true
+            },
+            "width" : {
+               "_typeName" : "RelativeValue",
+               "type" : 3,
+               "value" : 2.0
+            }
+         },
+         "color" : [ 1.0, 1.0, 1.0, 1.0 ],
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 1,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            },
+            "vertAlign" : 1,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            }
+         }
+      },
+      {
+         "_typeName" : "CanvasLayout",
+         "adjustment" : 0,
+         "box" : {
+            "_typeName" : "RelativeBox",
+            "height" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0.0
+            },
+            "offset" : {
+               "_empty" : true
+            },
+            "width" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0.0
+            }
+         },
+         "list" : [
+            {
+               "_name" : "name",
+               "_typeName" : "StaticLabel",
+               "adjustSize" : true,
+               "box" : {
+                  "_typeName" : "RelativeBox",
+                  "height" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 0,
+                     "value" : 0.0
+                  },
+                  "offset" : {
+                     "_empty" : true
+                  },
+                  "width" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 0,
+                     "value" : 0.0
+                  }
+               },
+               "color" : [ 0.0, 0.0, 0.0, 1.0 ],
+               "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 0,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 10.0
+                  },
+                  "vertAlign" : 1,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  }
+               },
+               "properties" : {
+                  "_typeName" : "AlignProperties",
+                  "enableStacking" : false,
+                  "font" : {
+                     "_typeName" : "FontDesc",
+                     "family" : "Roboto",
+                     "size" : 28.0
+                  },
+                  "horAlign" : 0,
+                  "vertAlign" : 0
+               },
+               "text" : "Надпись"
+            },
+            {
+               "_name" : "del_b",
+               "_typeName" : "Button",
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 2,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  },
+                  "vertAlign" : 1,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  }
+               },
+               "skin" : {
+                  "_typeName" : "RectangleImageButtonSkin",
+                  "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                  "borderWidth" : 1.0,
+                  "box" : {
+                     "_typeName" : "PixelBox",
+                     "height" : 48.0,
+                     "width" : 48.0
+                  },
+                  "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                  "imageColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                  "imageHeight" : 48.0,
+                  "imageName" : ".\\del.png",
+                  "imageWidth" : 48.0,
+                  "useGradient" : true
+               }
+            },
+            {
+               "_name" : "edit_b",
+               "_typeName" : "Button",
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 2,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : -48.0
+                  },
+                  "vertAlign" : 1,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  }
+               },
+               "skin" : {
+                  "_typeName" : "RectangleImageButtonSkin",
+                  "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                  "borderWidth" : 1.0,
+                  "box" : {
+                     "_typeName" : "PixelBox",
+                     "height" : 48.0,
+                     "width" : 48.0
+                  },
+                  "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                  "imageColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                  "imageHeight" : 48.0,
+                  "imageName" : ".\\edit.png",
+                  "imageWidth" : 48.0,
+                  "useGradient" : true
+               }
+            }
+         ],
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 1,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            },
+            "vertAlign" : 1,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            }
+         }
+      }
+   ],
+   "position" : {
+      "_typeName" : "AligningOffset",
+      "horAlign" : 1,
+      "horOffset" : {
+         "_typeName" : "RelativeValue",
+         "type" : 1,
+         "value" : 0.0
+      },
+      "vertAlign" : 1,
+      "vertOffset" : {
+         "_typeName" : "RelativeValue",
+         "type" : 1,
+         "value" : 0.0
+      }
+   }
+}
