@@ -60,7 +60,7 @@
          }
       },
       {
-         "_name" : "load",
+         "_name" : "Load",
          "_typeName" : "Button",
          "position" : {
             "_typeName" : "AligningOffset",
@@ -140,8 +140,137 @@
          }
       },
       {
+         "_name" : "add",
+         "_typeName" : "Button",
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 0,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 300.0
+            },
+            "vertAlign" : 0,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            }
+         },
+         "skin" : {
+            "_typeName" : "SimpleRectangleButtonSkin",
+            "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+            "borderWidth" : 1.0,
+            "box" : {
+               "_typeName" : "PixelBox",
+               "height" : 100.0,
+               "width" : 100.0
+            },
+            "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+            "font" : {
+               "_typeName" : "FontDesc",
+               "family" : "Roboto",
+               "outlineWidth" : 1.0,
+               "size" : 28.0
+            },
+            "text" : "Add",
+            "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+            "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+            "useGradient" : true
+         }
+      },
+      {
+         "_name" : "update",
+         "_typeName" : "Button",
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 0,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 400.0
+            },
+            "vertAlign" : 0,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            }
+         },
+         "skin" : {
+            "_typeName" : "SimpleRectangleButtonSkin",
+            "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+            "borderWidth" : 1.0,
+            "box" : {
+               "_typeName" : "PixelBox",
+               "height" : 100.0,
+               "width" : 100.0
+            },
+            "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+            "font" : {
+               "_typeName" : "FontDesc",
+               "family" : "Roboto",
+               "outlineWidth" : 1.0,
+               "size" : 28.0
+            },
+            "text" : "Update",
+            "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+            "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+            "useGradient" : true
+         }
+      },
+      {
+         "_name" : "list_object",
          "_typeName" : "ScrollableArea",
-         "objects" : [],
+         "objects" : [
+            {
+               "_name" : "obj_list",
+               "_typeName" : "LinearLayout",
+               "list" : [],
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 1,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  },
+                  "vertAlign" : 1,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  }
+               },
+               "skin" : {
+                  "_typeName" : "VerticalLayoutSkin",
+                  "adjustment" : 1,
+                  "align" : 1,
+                  "box" : {
+                     "_typeName" : "RelativeBox",
+                     "height" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 0,
+                        "value" : 0.0
+                     },
+                     "offset" : {
+                        "_empty" : true
+                     },
+                     "width" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 0,
+                        "value" : 0.0
+                     }
+                  },
+                  "padding" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : -0.0
+                  }
+               },
+               "skipInvisibleElements" : false
+            }
+         ],
          "position" : {
             "_typeName" : "AligningOffset",
             "horAlign" : 0,
@@ -190,48 +319,9 @@
          }
       },
       {
-         "_name" : "add",
-         "_typeName" : "Button",
-         "position" : {
-            "_typeName" : "AligningOffset",
-            "horAlign" : 0,
-            "horOffset" : {
-               "_typeName" : "RelativeValue",
-               "type" : 1,
-               "value" : 300.0
-            },
-            "vertAlign" : 0,
-            "vertOffset" : {
-               "_typeName" : "RelativeValue",
-               "type" : 1,
-               "value" : 0.0
-            }
-         },
-         "skin" : {
-            "_typeName" : "SimpleRectangleButtonSkin",
-            "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-            "borderWidth" : 1.0,
-            "box" : {
-               "_typeName" : "PixelBox",
-               "height" : 100.0,
-               "width" : 100.0
-            },
-            "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
-            "font" : {
-               "_typeName" : "FontDesc",
-               "family" : "Roboto",
-               "outlineWidth" : 1.0,
-               "size" : 28.0
-            },
-            "text" : "Add",
-            "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-            "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-            "useGradient" : true
-         }
-      },
-      {
+         "_name" : "editor",
          "_typeName" : "SelectingWidget",
-         "adjustment" : 0,
+         "adjustment" : 1,
          "box" : {
             "_typeName" : "RelativeBox",
             "height" : {
@@ -248,14 +338,14 @@
                "value" : 500.0
             }
          },
-         "currentID" : 7,
+         "currentID" : 0,
          "objects" : [
             {
                "_key" : 0,
                "_value" : {
                   "_name" : "recipe",
                   "_typeName" : "CanvasLayout",
-                  "adjustment" : 0,
+                  "adjustment" : 1,
                   "box" : {
                      "_typeName" : "RelativeBox",
                      "height" : {
@@ -326,10 +416,10 @@
                                        "horAlign" : 0,
                                        "vertAlign" : 0
                                     },
-                                    "text" : "Название:"
+                                    "text" : "ID:"
                                  },
                                  {
-                                    "_name" : "name_recipe",
+                                    "_name" : "recipe_id",
                                     "_typeName" : "TextBox",
                                     "filter" : {
                                        "_empty" : true
@@ -415,100 +505,8 @@
                               "skipInvisibleElements" : false
                            },
                            {
-                              "_typeName" : "LinearLayout",
-                              "list" : [
-                                 {
-                                    "_typeName" : "StaticLabel",
-                                    "adjustSize" : true,
-                                    "box" : {
-                                       "_typeName" : "RelativeBox",
-                                       "height" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 0,
-                                          "value" : 0.0
-                                       },
-                                       "offset" : {
-                                          "_empty" : true
-                                       },
-                                       "width" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 0,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                    "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                    "position" : {
-                                       "_typeName" : "AligningOffset",
-                                       "horAlign" : 0,
-                                       "horOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       },
-                                       "vertAlign" : 1,
-                                       "vertOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "properties" : {
-                                       "_typeName" : "AlignProperties",
-                                       "enableStacking" : false,
-                                       "font" : {
-                                          "_typeName" : "FontDesc",
-                                          "family" : "Roboto",
-                                          "size" : 28.0
-                                       },
-                                       "horAlign" : 0,
-                                       "vertAlign" : 0
-                                    },
-                                    "text" : "Рецепт:"
-                                 },
-                                 {
-                                    "_name" : "recipe_recipe",
-                                    "_typeName" : "TextBox",
-                                    "filter" : {
-                                       "_empty" : true
-                                    },
-                                    "position" : {
-                                       "_typeName" : "AligningOffset",
-                                       "horAlign" : 0,
-                                       "horOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 10.0
-                                       },
-                                       "vertAlign" : 1,
-                                       "vertOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "skin" : {
-                                       "_typeName" : "SimpleRectangleTextBoxSkin",
-                                       "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                       "borderWidth" : 1.0,
-                                       "box" : {
-                                          "_typeName" : "PixelBox",
-                                          "height" : 48.0,
-                                          "width" : 300.0
-                                       },
-                                       "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                       "font" : {
-                                          "_typeName" : "FontDesc",
-                                          "family" : "Roboto",
-                                          "size" : 28.0
-                                       },
-                                       "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                       "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                       "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                    },
-                                    "text" : ""
-                                 }
-                              ],
+                              "_name" : "recipe_add_ing",
+                              "_typeName" : "Button",
                               "position" : {
                                  "_typeName" : "AligningOffset",
                                  "horAlign" : 0,
@@ -525,364 +523,34 @@
                                  }
                               },
                               "skin" : {
-                                 "_typeName" : "HorizontalLayoutSkin",
-                                 "adjustment" : 1,
-                                 "align" : 1,
+                                 "_typeName" : "SimpleRectangleButtonSkin",
+                                 "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "borderWidth" : 1.0,
                                  "box" : {
-                                    "_typeName" : "RelativeBox",
-                                    "height" : {
-                                       "_typeName" : "RelativeValue",
-                                       "type" : 0,
-                                       "value" : 0.0
-                                    },
-                                    "offset" : {
-                                       "_empty" : true
-                                    },
-                                    "width" : {
-                                       "_typeName" : "RelativeValue",
-                                       "type" : 0,
-                                       "value" : 0.0
-                                    }
+                                    "_typeName" : "PixelBox",
+                                    "height" : 100.0,
+                                    "width" : 100.0
                                  },
-                                 "padding" : {
-                                    "_typeName" : "RelativeValue",
-                                    "type" : 1,
-                                    "value" : 10.0
-                                 }
-                              },
-                              "skipInvisibleElements" : false
+                                 "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                                 "font" : {
+                                    "_typeName" : "FontDesc",
+                                    "family" : "Roboto",
+                                    "outlineWidth" : 1.0,
+                                    "size" : 28.0
+                                 },
+                                 "text" : "Add",
+                                 "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                 "useGradient" : true
+                              }
                            },
                            {
                               "_typeName" : "ScrollableArea",
                               "objects" : [
                                  {
+                                    "_name" : "recipe_list",
                                     "_typeName" : "LinearLayout",
-                                    "list" : [
-                                       {
-                                          "_name" : "rec1",
-                                          "_typeName" : "LinearLayout",
-                                          "list" : [
-                                             {
-                                                "_typeName" : "LinearLayout",
-                                                "list" : [
-                                                   {
-                                                      "_typeName" : "StaticLabel",
-                                                      "adjustSize" : true,
-                                                      "box" : {
-                                                         "_typeName" : "RelativeBox",
-                                                         "height" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         },
-                                                         "offset" : {
-                                                            "_empty" : true
-                                                         },
-                                                         "width" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                      "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "properties" : {
-                                                         "_typeName" : "AlignProperties",
-                                                         "enableStacking" : false,
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "horAlign" : 0,
-                                                         "vertAlign" : 0
-                                                      },
-                                                      "text" : "Имя:"
-                                                   },
-                                                   {
-                                                      "_name" : "name_rec_recipe",
-                                                      "_typeName" : "TextBox",
-                                                      "filter" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 10.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "skin" : {
-                                                         "_typeName" : "SimpleRectangleTextBoxSkin",
-                                                         "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                                         "borderWidth" : 1.0,
-                                                         "box" : {
-                                                            "_typeName" : "PixelBox",
-                                                            "height" : 48.0,
-                                                            "width" : 300.0
-                                                         },
-                                                         "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                                         "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                                      },
-                                                      "text" : ""
-                                                   }
-                                                ],
-                                                "position" : {
-                                                   "_typeName" : "AligningOffset",
-                                                   "horAlign" : 0,
-                                                   "horOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   },
-                                                   "vertAlign" : 0,
-                                                   "vertOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   }
-                                                },
-                                                "skin" : {
-                                                   "_typeName" : "HorizontalLayoutSkin",
-                                                   "adjustment" : 1,
-                                                   "align" : 1,
-                                                   "box" : {
-                                                      "_typeName" : "RelativeBox",
-                                                      "height" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      },
-                                                      "offset" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "width" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      }
-                                                   },
-                                                   "padding" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 10.0
-                                                   }
-                                                },
-                                                "skipInvisibleElements" : false
-                                             },
-                                             {
-                                                "_typeName" : "LinearLayout",
-                                                "list" : [
-                                                   {
-                                                      "_typeName" : "StaticLabel",
-                                                      "adjustSize" : true,
-                                                      "box" : {
-                                                         "_typeName" : "RelativeBox",
-                                                         "height" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         },
-                                                         "offset" : {
-                                                            "_empty" : true
-                                                         },
-                                                         "width" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                      "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "properties" : {
-                                                         "_typeName" : "AlignProperties",
-                                                         "enableStacking" : false,
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "horAlign" : 0,
-                                                         "vertAlign" : 0
-                                                      },
-                                                      "text" : "Количество:"
-                                                   },
-                                                   {
-                                                      "_name" : "col_rec_recipe",
-                                                      "_typeName" : "TextBox",
-                                                      "filter" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 10.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "skin" : {
-                                                         "_typeName" : "SimpleRectangleTextBoxSkin",
-                                                         "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                                         "borderWidth" : 1.0,
-                                                         "box" : {
-                                                            "_typeName" : "PixelBox",
-                                                            "height" : 48.0,
-                                                            "width" : 300.0
-                                                         },
-                                                         "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                                         "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                                      },
-                                                      "text" : ""
-                                                   }
-                                                ],
-                                                "position" : {
-                                                   "_typeName" : "AligningOffset",
-                                                   "horAlign" : 0,
-                                                   "horOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   },
-                                                   "vertAlign" : 0,
-                                                   "vertOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : -10.0
-                                                   }
-                                                },
-                                                "skin" : {
-                                                   "_typeName" : "HorizontalLayoutSkin",
-                                                   "adjustment" : 1,
-                                                   "align" : 1,
-                                                   "box" : {
-                                                      "_typeName" : "RelativeBox",
-                                                      "height" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      },
-                                                      "offset" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "width" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      }
-                                                   },
-                                                   "padding" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 10.0
-                                                   }
-                                                },
-                                                "skipInvisibleElements" : false
-                                             }
-                                          ],
-                                          "position" : {
-                                             "_typeName" : "AligningOffset",
-                                             "horAlign" : 1,
-                                             "horOffset" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : 0.0
-                                             },
-                                             "vertAlign" : 0,
-                                             "vertOffset" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : 0.0
-                                             }
-                                          },
-                                          "skin" : {
-                                             "_typeName" : "VerticalLayoutSkin",
-                                             "adjustment" : 1,
-                                             "align" : 0,
-                                             "box" : {
-                                                "_typeName" : "RelativeBox",
-                                                "height" : {
-                                                   "_typeName" : "RelativeValue",
-                                                   "type" : 0,
-                                                   "value" : 0.0
-                                                },
-                                                "offset" : {
-                                                   "_empty" : true
-                                                },
-                                                "width" : {
-                                                   "_typeName" : "RelativeValue",
-                                                   "type" : 0,
-                                                   "value" : 0.0
-                                                }
-                                             },
-                                             "padding" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : -10.0
-                                             }
-                                          },
-                                          "skipInvisibleElements" : false
-                                       }
-                                    ],
+                                    "list" : [],
                                     "position" : {
                                        "_typeName" : "AligningOffset",
                                        "horAlign" : 1,
@@ -945,7 +613,7 @@
                               "recountObjectsBoxes" : true,
                               "skin" : {
                                  "_typeName" : "SimpleScrollableAreaSkin",
-                                 "arrowColor" : [ 0.19499999284744263, 0.19499999284744263, 0.19499999284744263, 1.0 ],
+                                 "arrowColor" : [ 0.19607843458652496, 0.19607843458652496, 0.19607843458652496, 1.0 ],
                                  "arrowPadding" : 3.0,
                                  "backgroundColor" : [ 0.90196079015731812, 0.90196079015731812, 0.90196079015731812, 1.0 ],
                                  "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -977,7 +645,7 @@
                         ],
                         "position" : {
                            "_typeName" : "AligningOffset",
-                           "horAlign" : 1,
+                           "horAlign" : 0,
                            "horOffset" : {
                               "_typeName" : "RelativeValue",
                               "type" : 1,
@@ -1614,10 +1282,10 @@
                                        "horAlign" : 0,
                                        "vertAlign" : 0
                                     },
-                                    "text" : "Название:"
+                                    "text" : "Id:"
                                  },
                                  {
-                                    "_name" : "weapon_name",
+                                    "_name" : "weapon_id",
                                     "_typeName" : "TextBox",
                                     "filter" : {
                                        "_empty" : true
@@ -1752,10 +1420,10 @@
                                        "horAlign" : 0,
                                        "vertAlign" : 0
                                     },
-                                    "text" : "Id:"
+                                    "text" : "Название:"
                                  },
                                  {
-                                    "_name" : "weapon_id",
+                                    "_name" : "weapon_name",
                                     "_typeName" : "TextBox",
                                     "filter" : {
                                        "_empty" : true
@@ -3998,144 +3666,6 @@
                                        "horAlign" : 0,
                                        "vertAlign" : 0
                                     },
-                                    "text" : "Эффекты:"
-                                 },
-                                 {
-                                    "_name" : "armor_baff_col",
-                                    "_typeName" : "TextBox",
-                                    "filter" : {
-                                       "_empty" : true
-                                    },
-                                    "position" : {
-                                       "_typeName" : "AligningOffset",
-                                       "horAlign" : 0,
-                                       "horOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 10.0
-                                       },
-                                       "vertAlign" : 1,
-                                       "vertOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "skin" : {
-                                       "_typeName" : "SimpleRectangleTextBoxSkin",
-                                       "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                       "borderWidth" : 1.0,
-                                       "box" : {
-                                          "_typeName" : "PixelBox",
-                                          "height" : 48.0,
-                                          "width" : 300.0
-                                       },
-                                       "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                       "font" : {
-                                          "_typeName" : "FontDesc",
-                                          "family" : "Roboto",
-                                          "size" : 28.0
-                                       },
-                                       "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                       "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                       "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                    },
-                                    "text" : ""
-                                 }
-                              ],
-                              "position" : {
-                                 "_typeName" : "AligningOffset",
-                                 "horAlign" : 0,
-                                 "horOffset" : {
-                                    "_typeName" : "RelativeValue",
-                                    "type" : 1,
-                                    "value" : 0.0
-                                 },
-                                 "vertAlign" : 0,
-                                 "vertOffset" : {
-                                    "_typeName" : "RelativeValue",
-                                    "type" : 1,
-                                    "value" : -10.0
-                                 }
-                              },
-                              "skin" : {
-                                 "_typeName" : "HorizontalLayoutSkin",
-                                 "adjustment" : 1,
-                                 "align" : 1,
-                                 "box" : {
-                                    "_typeName" : "RelativeBox",
-                                    "height" : {
-                                       "_typeName" : "RelativeValue",
-                                       "type" : 0,
-                                       "value" : 0.0
-                                    },
-                                    "offset" : {
-                                       "_empty" : true
-                                    },
-                                    "width" : {
-                                       "_typeName" : "RelativeValue",
-                                       "type" : 0,
-                                       "value" : 0.0
-                                    }
-                                 },
-                                 "padding" : {
-                                    "_typeName" : "RelativeValue",
-                                    "type" : 1,
-                                    "value" : 10.0
-                                 }
-                              },
-                              "skipInvisibleElements" : false
-                           },
-                           {
-                              "_typeName" : "LinearLayout",
-                              "list" : [
-                                 {
-                                    "_typeName" : "StaticLabel",
-                                    "adjustSize" : true,
-                                    "box" : {
-                                       "_typeName" : "RelativeBox",
-                                       "height" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 0,
-                                          "value" : 0.0
-                                       },
-                                       "offset" : {
-                                          "_empty" : true
-                                       },
-                                       "width" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 0,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                    "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                    "position" : {
-                                       "_typeName" : "AligningOffset",
-                                       "horAlign" : 0,
-                                       "horOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       },
-                                       "vertAlign" : 1,
-                                       "vertOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "properties" : {
-                                       "_typeName" : "AlignProperties",
-                                       "enableStacking" : false,
-                                       "font" : {
-                                          "_typeName" : "FontDesc",
-                                          "family" : "Roboto",
-                                          "size" : 28.0
-                                       },
-                                       "horAlign" : 0,
-                                       "vertAlign" : 0
-                                    },
                                     "text" : "Путь:"
                                  },
                                  {
@@ -4225,336 +3755,52 @@
                               "skipInvisibleElements" : false
                            },
                            {
+                              "_name" : "armor_add_effect",
+                              "_typeName" : "Button",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 0,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 },
+                                 "vertAlign" : 0,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -10.0
+                                 }
+                              },
+                              "skin" : {
+                                 "_typeName" : "SimpleRectangleButtonSkin",
+                                 "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "borderWidth" : 1.0,
+                                 "box" : {
+                                    "_typeName" : "PixelBox",
+                                    "height" : 100.0,
+                                    "width" : 100.0
+                                 },
+                                 "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                                 "font" : {
+                                    "_typeName" : "FontDesc",
+                                    "family" : "Roboto",
+                                    "outlineWidth" : 1.0,
+                                    "size" : 28.0
+                                 },
+                                 "text" : "Add",
+                                 "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                 "useGradient" : true
+                              }
+                           },
+                           {
                               "_typeName" : "ScrollableArea",
                               "objects" : [
                                  {
+                                    "_name" : "armor_effect_list",
                                     "_typeName" : "LinearLayout",
-                                    "list" : [
-                                       {
-                                          "_name" : "effect1",
-                                          "_typeName" : "LinearLayout",
-                                          "list" : [
-                                             {
-                                                "_typeName" : "LinearLayout",
-                                                "list" : [
-                                                   {
-                                                      "_typeName" : "StaticLabel",
-                                                      "adjustSize" : true,
-                                                      "box" : {
-                                                         "_typeName" : "RelativeBox",
-                                                         "height" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         },
-                                                         "offset" : {
-                                                            "_empty" : true
-                                                         },
-                                                         "width" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                      "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "properties" : {
-                                                         "_typeName" : "AlignProperties",
-                                                         "enableStacking" : false,
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "horAlign" : 0,
-                                                         "vertAlign" : 0
-                                                      },
-                                                      "text" : "Имя:"
-                                                   },
-                                                   {
-                                                      "_name" : "name",
-                                                      "_typeName" : "TextBox",
-                                                      "filter" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 10.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "skin" : {
-                                                         "_typeName" : "SimpleRectangleTextBoxSkin",
-                                                         "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                                         "borderWidth" : 1.0,
-                                                         "box" : {
-                                                            "_typeName" : "PixelBox",
-                                                            "height" : 48.0,
-                                                            "width" : 300.0
-                                                         },
-                                                         "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                                         "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                                      },
-                                                      "text" : ""
-                                                   }
-                                                ],
-                                                "position" : {
-                                                   "_typeName" : "AligningOffset",
-                                                   "horAlign" : 1,
-                                                   "horOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   },
-                                                   "vertAlign" : 0,
-                                                   "vertOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   }
-                                                },
-                                                "skin" : {
-                                                   "_typeName" : "HorizontalLayoutSkin",
-                                                   "adjustment" : 1,
-                                                   "align" : 1,
-                                                   "box" : {
-                                                      "_typeName" : "RelativeBox",
-                                                      "height" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      },
-                                                      "offset" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "width" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      }
-                                                   },
-                                                   "padding" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 10.0
-                                                   }
-                                                },
-                                                "skipInvisibleElements" : false
-                                             },
-                                             {
-                                                "_typeName" : "LinearLayout",
-                                                "list" : [
-                                                   {
-                                                      "_typeName" : "StaticLabel",
-                                                      "adjustSize" : true,
-                                                      "box" : {
-                                                         "_typeName" : "RelativeBox",
-                                                         "height" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         },
-                                                         "offset" : {
-                                                            "_empty" : true
-                                                         },
-                                                         "width" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                      "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "properties" : {
-                                                         "_typeName" : "AlignProperties",
-                                                         "enableStacking" : false,
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "horAlign" : 0,
-                                                         "vertAlign" : 0
-                                                      },
-                                                      "text" : "Сила:"
-                                                   },
-                                                   {
-                                                      "_name" : "power",
-                                                      "_typeName" : "TextBox",
-                                                      "filter" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 10.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "skin" : {
-                                                         "_typeName" : "SimpleRectangleTextBoxSkin",
-                                                         "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                                         "borderWidth" : 1.0,
-                                                         "box" : {
-                                                            "_typeName" : "PixelBox",
-                                                            "height" : 48.0,
-                                                            "width" : 300.0
-                                                         },
-                                                         "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                                         "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                                      },
-                                                      "text" : ""
-                                                   }
-                                                ],
-                                                "position" : {
-                                                   "_typeName" : "AligningOffset",
-                                                   "horAlign" : 1,
-                                                   "horOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   },
-                                                   "vertAlign" : 0,
-                                                   "vertOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : -10.0
-                                                   }
-                                                },
-                                                "skin" : {
-                                                   "_typeName" : "HorizontalLayoutSkin",
-                                                   "adjustment" : 1,
-                                                   "align" : 1,
-                                                   "box" : {
-                                                      "_typeName" : "RelativeBox",
-                                                      "height" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      },
-                                                      "offset" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "width" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      }
-                                                   },
-                                                   "padding" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 10.0
-                                                   }
-                                                },
-                                                "skipInvisibleElements" : false
-                                             }
-                                          ],
-                                          "position" : {
-                                             "_typeName" : "AligningOffset",
-                                             "horAlign" : 1,
-                                             "horOffset" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : 0.0
-                                             },
-                                             "vertAlign" : 0,
-                                             "vertOffset" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : 0.0
-                                             }
-                                          },
-                                          "skin" : {
-                                             "_typeName" : "VerticalLayoutSkin",
-                                             "adjustment" : 1,
-                                             "align" : 1,
-                                             "box" : {
-                                                "_typeName" : "RelativeBox",
-                                                "height" : {
-                                                   "_typeName" : "RelativeValue",
-                                                   "type" : 0,
-                                                   "value" : 0.0
-                                                },
-                                                "offset" : {
-                                                   "_empty" : true
-                                                },
-                                                "width" : {
-                                                   "_typeName" : "RelativeValue",
-                                                   "type" : 0,
-                                                   "value" : 0.0
-                                                }
-                                             },
-                                             "padding" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : -10.0
-                                             }
-                                          },
-                                          "skipInvisibleElements" : false
-                                       }
-                                    ],
+                                    "list" : [],
                                     "position" : {
                                        "_typeName" : "AligningOffset",
                                        "horAlign" : 0,
@@ -4925,7 +4171,7 @@
                                     "text" : "Место:"
                                  },
                                  {
-                                    "_name" : "place",
+                                    "_name" : "fon_place",
                                     "_typeName" : "TextBox",
                                     "filter" : {
                                        "_empty" : true
@@ -5979,7 +5225,509 @@
                                     "text" : "Место:"
                                  },
                                  {
-                                    "_name" : "place",
+                                    "_name" : "world_obj_place",
+                                    "_typeName" : "TextBox",
+                                    "filter" : {
+                                       "_empty" : true
+                                    },
+                                    "position" : {
+                                       "_typeName" : "AligningOffset",
+                                       "horAlign" : 0,
+                                       "horOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 10.0
+                                       },
+                                       "vertAlign" : 1,
+                                       "vertOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "skin" : {
+                                       "_typeName" : "SimpleRectangleTextBoxSkin",
+                                       "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
+                                       "borderWidth" : 1.0,
+                                       "box" : {
+                                          "_typeName" : "PixelBox",
+                                          "height" : 48.0,
+                                          "width" : 300.0
+                                       },
+                                       "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                       "font" : {
+                                          "_typeName" : "FontDesc",
+                                          "family" : "Roboto",
+                                          "size" : 28.0
+                                       },
+                                       "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
+                                       "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                       "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
+                                    },
+                                    "text" : ""
+                                 }
+                              ],
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 0,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 },
+                                 "vertAlign" : 0,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -10.0
+                                 }
+                              },
+                              "skin" : {
+                                 "_typeName" : "HorizontalLayoutSkin",
+                                 "adjustment" : 1,
+                                 "align" : 1,
+                                 "box" : {
+                                    "_typeName" : "RelativeBox",
+                                    "height" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    },
+                                    "offset" : {
+                                       "_empty" : true
+                                    },
+                                    "width" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    }
+                                 },
+                                 "padding" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 10.0
+                                 }
+                              },
+                              "skipInvisibleElements" : false
+                           },
+                           {
+                              "_name" : "world_obj_add_drop",
+                              "_typeName" : "Button",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 0,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 },
+                                 "vertAlign" : 0,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -10.0
+                                 }
+                              },
+                              "skin" : {
+                                 "_typeName" : "SimpleRectangleButtonSkin",
+                                 "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "borderWidth" : 1.0,
+                                 "box" : {
+                                    "_typeName" : "PixelBox",
+                                    "height" : 100.0,
+                                    "width" : 100.0
+                                 },
+                                 "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                                 "font" : {
+                                    "_typeName" : "FontDesc",
+                                    "family" : "Roboto",
+                                    "outlineWidth" : 1.0,
+                                    "size" : 28.0
+                                 },
+                                 "text" : "Add",
+                                 "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                 "useGradient" : true
+                              }
+                           },
+                           {
+                              "_typeName" : "ScrollableArea",
+                              "objects" : [
+                                 {
+                                    "_name" : "world_obj_drop_list",
+                                    "_typeName" : "LinearLayout",
+                                    "list" : [],
+                                    "position" : {
+                                       "_typeName" : "AligningOffset",
+                                       "horAlign" : 0,
+                                       "horOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       },
+                                       "vertAlign" : 0,
+                                       "vertOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "skin" : {
+                                       "_typeName" : "VerticalLayoutSkin",
+                                       "adjustment" : 1,
+                                       "align" : 0,
+                                       "box" : {
+                                          "_typeName" : "RelativeBox",
+                                          "height" : {
+                                             "_typeName" : "RelativeValue",
+                                             "type" : 0,
+                                             "value" : 0.0
+                                          },
+                                          "offset" : {
+                                             "_empty" : true
+                                          },
+                                          "width" : {
+                                             "_typeName" : "RelativeValue",
+                                             "type" : 0,
+                                             "value" : 0.0
+                                          }
+                                       },
+                                       "padding" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : -0.0
+                                       }
+                                    },
+                                    "skipInvisibleElements" : false
+                                 }
+                              ],
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 0,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 },
+                                 "vertAlign" : 0,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -10.0
+                                 }
+                              },
+                              "recountObjectsBoxes" : true,
+                              "skin" : {
+                                 "_typeName" : "SimpleScrollableAreaSkin",
+                                 "arrowColor" : [ 0.19607843458652496, 0.19607843458652496, 0.19607843458652496, 1.0 ],
+                                 "arrowPadding" : 3.0,
+                                 "backgroundColor" : [ 0.90196079015731812, 0.90196079015731812, 0.90196079015731812, 1.0 ],
+                                 "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "borderWidth" : 1.0,
+                                 "box" : {
+                                    "_typeName" : "RelativeBox",
+                                    "height" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    },
+                                    "offset" : {
+                                       "_empty" : true
+                                    },
+                                    "width" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    }
+                                 },
+                                 "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                                 "horScrollBarEnabled" : true,
+                                 "scrollBarWidth" : 16.0,
+                                 "scrollStep" : 10.0,
+                                 "useGradient" : true,
+                                 "vertScrollBarEnabled" : true
+                              }
+                           }
+                        ],
+                        "position" : {
+                           "_typeName" : "AligningOffset",
+                           "horAlign" : 0,
+                           "horOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           },
+                           "vertAlign" : 0,
+                           "vertOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           }
+                        },
+                        "skin" : {
+                           "_typeName" : "VerticalLayoutSkin",
+                           "adjustment" : 1,
+                           "align" : 0,
+                           "box" : {
+                              "_typeName" : "RelativeBox",
+                              "height" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 0,
+                                 "value" : 0.0
+                              },
+                              "offset" : {
+                                 "_empty" : true
+                              },
+                              "width" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 0,
+                                 "value" : 0.0
+                              }
+                           },
+                           "padding" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : -10.0
+                           }
+                        },
+                        "skipInvisibleElements" : false
+                     }
+                  ],
+                  "position" : {
+                     "_typeName" : "AligningOffset",
+                     "horAlign" : 0,
+                     "horOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0.0
+                     },
+                     "vertAlign" : 1,
+                     "vertOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0.0
+                     }
+                  }
+               }
+            },
+            {
+               "_key" : 7,
+               "_value" : {
+                  "_name" : "world_enemy",
+                  "_typeName" : "CanvasLayout",
+                  "adjustment" : 0,
+                  "box" : {
+                     "_typeName" : "RelativeBox",
+                     "height" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 0,
+                        "value" : 0.0
+                     },
+                     "offset" : {
+                        "_empty" : true
+                     },
+                     "width" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 0,
+                        "value" : 0.0
+                     }
+                  },
+                  "list" : [
+                     {
+                        "_typeName" : "LinearLayout",
+                        "list" : [
+                           {
+                              "_typeName" : "LinearLayout",
+                              "list" : [
+                                 {
+                                    "_typeName" : "StaticLabel",
+                                    "adjustSize" : true,
+                                    "box" : {
+                                       "_typeName" : "RelativeBox",
+                                       "height" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 0,
+                                          "value" : 0.0
+                                       },
+                                       "offset" : {
+                                          "_empty" : true
+                                       },
+                                       "width" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 0,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "color" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                    "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                    "position" : {
+                                       "_typeName" : "AligningOffset",
+                                       "horAlign" : 0,
+                                       "horOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       },
+                                       "vertAlign" : 1,
+                                       "vertOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "properties" : {
+                                       "_typeName" : "AlignProperties",
+                                       "enableStacking" : false,
+                                       "font" : {
+                                          "_typeName" : "FontDesc",
+                                          "family" : "Roboto",
+                                          "size" : 28.0
+                                       },
+                                       "horAlign" : 0,
+                                       "vertAlign" : 0
+                                    },
+                                    "text" : "Id:"
+                                 },
+                                 {
+                                    "_name" : "enemy_id",
+                                    "_typeName" : "TextBox",
+                                    "filter" : {
+                                       "_empty" : true
+                                    },
+                                    "position" : {
+                                       "_typeName" : "AligningOffset",
+                                       "horAlign" : 0,
+                                       "horOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 10.0
+                                       },
+                                       "vertAlign" : 1,
+                                       "vertOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "skin" : {
+                                       "_typeName" : "SimpleRectangleTextBoxSkin",
+                                       "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
+                                       "borderWidth" : 1.0,
+                                       "box" : {
+                                          "_typeName" : "PixelBox",
+                                          "height" : 48.0,
+                                          "width" : 300.0
+                                       },
+                                       "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                       "font" : {
+                                          "_typeName" : "FontDesc",
+                                          "family" : "Roboto",
+                                          "size" : 28.0
+                                       },
+                                       "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
+                                       "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                       "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
+                                    },
+                                    "text" : ""
+                                 }
+                              ],
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 0,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 },
+                                 "vertAlign" : 0,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 }
+                              },
+                              "skin" : {
+                                 "_typeName" : "HorizontalLayoutSkin",
+                                 "adjustment" : 1,
+                                 "align" : 1,
+                                 "box" : {
+                                    "_typeName" : "RelativeBox",
+                                    "height" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    },
+                                    "offset" : {
+                                       "_empty" : true
+                                    },
+                                    "width" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    }
+                                 },
+                                 "padding" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 10.0
+                                 }
+                              },
+                              "skipInvisibleElements" : false
+                           },
+                           {
+                              "_typeName" : "LinearLayout",
+                              "list" : [
+                                 {
+                                    "_typeName" : "StaticLabel",
+                                    "adjustSize" : true,
+                                    "box" : {
+                                       "_typeName" : "RelativeBox",
+                                       "height" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 0,
+                                          "value" : 0.0
+                                       },
+                                       "offset" : {
+                                          "_empty" : true
+                                       },
+                                       "width" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 0,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "color" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                    "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                    "position" : {
+                                       "_typeName" : "AligningOffset",
+                                       "horAlign" : 0,
+                                       "horOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       },
+                                       "vertAlign" : 1,
+                                       "vertOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "properties" : {
+                                       "_typeName" : "AlignProperties",
+                                       "enableStacking" : false,
+                                       "font" : {
+                                          "_typeName" : "FontDesc",
+                                          "family" : "Roboto",
+                                          "size" : 28.0
+                                       },
+                                       "horAlign" : 0,
+                                       "vertAlign" : 0
+                                    },
+                                    "text" : "Место:"
+                                 },
+                                 {
+                                    "_name" : "enemy_place",
                                     "_typeName" : "TextBox",
                                     "filter" : {
                                        "_empty" : true
@@ -6114,10 +5862,10 @@
                                        "horAlign" : 0,
                                        "vertAlign" : 0
                                     },
-                                    "text" : "Дроп:"
+                                    "text" : "Шанс:"
                                  },
                                  {
-                                    "_name" : "world_obj_drop",
+                                    "_name" : "enemy_chance",
                                     "_typeName" : "TextBox",
                                     "filter" : {
                                        "_empty" : true
@@ -6203,337 +5951,29 @@
                               "skipInvisibleElements" : false
                            },
                            {
-                              "_typeName" : "ScrollableArea",
-                              "objects" : [
+                              "_typeName" : "LinearLayout",
+                              "list" : [
                                  {
-                                    "_name" : "drop_w",
-                                    "_typeName" : "LinearLayout",
-                                    "list" : [
-                                       {
-                                          "_name" : "drop1",
-                                          "_typeName" : "LinearLayout",
-                                          "list" : [
-                                             {
-                                                "_typeName" : "LinearLayout",
-                                                "list" : [
-                                                   {
-                                                      "_typeName" : "StaticLabel",
-                                                      "adjustSize" : true,
-                                                      "box" : {
-                                                         "_typeName" : "RelativeBox",
-                                                         "height" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         },
-                                                         "offset" : {
-                                                            "_empty" : true
-                                                         },
-                                                         "width" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                      "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "properties" : {
-                                                         "_typeName" : "AlignProperties",
-                                                         "enableStacking" : false,
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "horAlign" : 0,
-                                                         "vertAlign" : 0
-                                                      },
-                                                      "text" : "Имя:"
-                                                   },
-                                                   {
-                                                      "_name" : "drop_name",
-                                                      "_typeName" : "TextBox",
-                                                      "filter" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 10.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "skin" : {
-                                                         "_typeName" : "SimpleRectangleTextBoxSkin",
-                                                         "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                                         "borderWidth" : 1.0,
-                                                         "box" : {
-                                                            "_typeName" : "PixelBox",
-                                                            "height" : 48.0,
-                                                            "width" : 300.0
-                                                         },
-                                                         "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                                         "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                                      },
-                                                      "text" : ""
-                                                   }
-                                                ],
-                                                "position" : {
-                                                   "_typeName" : "AligningOffset",
-                                                   "horAlign" : 1,
-                                                   "horOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   },
-                                                   "vertAlign" : 0,
-                                                   "vertOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   }
-                                                },
-                                                "skin" : {
-                                                   "_typeName" : "HorizontalLayoutSkin",
-                                                   "adjustment" : 1,
-                                                   "align" : 1,
-                                                   "box" : {
-                                                      "_typeName" : "RelativeBox",
-                                                      "height" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      },
-                                                      "offset" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "width" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      }
-                                                   },
-                                                   "padding" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 10.0
-                                                   }
-                                                },
-                                                "skipInvisibleElements" : false
-                                             },
-                                             {
-                                                "_typeName" : "LinearLayout",
-                                                "list" : [
-                                                   {
-                                                      "_typeName" : "StaticLabel",
-                                                      "adjustSize" : true,
-                                                      "box" : {
-                                                         "_typeName" : "RelativeBox",
-                                                         "height" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         },
-                                                         "offset" : {
-                                                            "_empty" : true
-                                                         },
-                                                         "width" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                      "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "properties" : {
-                                                         "_typeName" : "AlignProperties",
-                                                         "enableStacking" : false,
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "horAlign" : 0,
-                                                         "vertAlign" : 0
-                                                      },
-                                                      "text" : "Шанс:"
-                                                   },
-                                                   {
-                                                      "_name" : "drop_chance",
-                                                      "_typeName" : "TextBox",
-                                                      "filter" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 10.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "skin" : {
-                                                         "_typeName" : "SimpleRectangleTextBoxSkin",
-                                                         "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                                         "borderWidth" : 1.0,
-                                                         "box" : {
-                                                            "_typeName" : "PixelBox",
-                                                            "height" : 48.0,
-                                                            "width" : 300.0
-                                                         },
-                                                         "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                                         "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                                      },
-                                                      "text" : ""
-                                                   }
-                                                ],
-                                                "position" : {
-                                                   "_typeName" : "AligningOffset",
-                                                   "horAlign" : 1,
-                                                   "horOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   },
-                                                   "vertAlign" : 0,
-                                                   "vertOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : -10.0
-                                                   }
-                                                },
-                                                "skin" : {
-                                                   "_typeName" : "HorizontalLayoutSkin",
-                                                   "adjustment" : 1,
-                                                   "align" : 1,
-                                                   "box" : {
-                                                      "_typeName" : "RelativeBox",
-                                                      "height" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      },
-                                                      "offset" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "width" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      }
-                                                   },
-                                                   "padding" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 10.0
-                                                   }
-                                                },
-                                                "skipInvisibleElements" : false
-                                             }
-                                          ],
-                                          "position" : {
-                                             "_typeName" : "AligningOffset",
-                                             "horAlign" : 1,
-                                             "horOffset" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : 0.0
-                                             },
-                                             "vertAlign" : 0,
-                                             "vertOffset" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : 0.0
-                                             }
-                                          },
-                                          "skin" : {
-                                             "_typeName" : "VerticalLayoutSkin",
-                                             "adjustment" : 1,
-                                             "align" : 1,
-                                             "box" : {
-                                                "_typeName" : "RelativeBox",
-                                                "height" : {
-                                                   "_typeName" : "RelativeValue",
-                                                   "type" : 0,
-                                                   "value" : 0.0
-                                                },
-                                                "offset" : {
-                                                   "_empty" : true
-                                                },
-                                                "width" : {
-                                                   "_typeName" : "RelativeValue",
-                                                   "type" : 0,
-                                                   "value" : 0.0
-                                                }
-                                             },
-                                             "padding" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : -10.0
-                                             }
-                                          },
-                                          "skipInvisibleElements" : false
+                                    "_typeName" : "StaticLabel",
+                                    "adjustSize" : true,
+                                    "box" : {
+                                       "_typeName" : "RelativeBox",
+                                       "height" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 0,
+                                          "value" : 0.0
+                                       },
+                                       "offset" : {
+                                          "_empty" : true
+                                       },
+                                       "width" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 0,
+                                          "value" : 0.0
                                        }
-                                    ],
+                                    },
+                                    "color" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                    "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
                                     "position" : {
                                        "_typeName" : "AligningOffset",
                                        "horAlign" : 0,
@@ -6542,40 +5982,67 @@
                                           "type" : 1,
                                           "value" : 0.0
                                        },
-                                       "vertAlign" : 0,
+                                       "vertAlign" : 1,
                                        "vertOffset" : {
                                           "_typeName" : "RelativeValue",
                                           "type" : 1,
-                                          "value" : -10.0
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "properties" : {
+                                       "_typeName" : "AlignProperties",
+                                       "enableStacking" : false,
+                                       "font" : {
+                                          "_typeName" : "FontDesc",
+                                          "family" : "Roboto",
+                                          "size" : 28.0
+                                       },
+                                       "horAlign" : 0,
+                                       "vertAlign" : 0
+                                    },
+                                    "text" : "Редкость:"
+                                 },
+                                 {
+                                    "_name" : "enemy_rare",
+                                    "_typeName" : "TextBox",
+                                    "filter" : {
+                                       "_empty" : true
+                                    },
+                                    "position" : {
+                                       "_typeName" : "AligningOffset",
+                                       "horAlign" : 0,
+                                       "horOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 10.0
+                                       },
+                                       "vertAlign" : 1,
+                                       "vertOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
                                        }
                                     },
                                     "skin" : {
-                                       "_typeName" : "VerticalLayoutSkin",
-                                       "adjustment" : 1,
-                                       "align" : 1,
+                                       "_typeName" : "SimpleRectangleTextBoxSkin",
+                                       "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
+                                       "borderWidth" : 1.0,
                                        "box" : {
-                                          "_typeName" : "RelativeBox",
-                                          "height" : {
-                                             "_typeName" : "RelativeValue",
-                                             "type" : 0,
-                                             "value" : 0.0
-                                          },
-                                          "offset" : {
-                                             "_empty" : true
-                                          },
-                                          "width" : {
-                                             "_typeName" : "RelativeValue",
-                                             "type" : 0,
-                                             "value" : 0.0
-                                          }
+                                          "_typeName" : "PixelBox",
+                                          "height" : 48.0,
+                                          "width" : 300.0
                                        },
-                                       "padding" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : -10.0
-                                       }
+                                       "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                       "font" : {
+                                          "_typeName" : "FontDesc",
+                                          "family" : "Roboto",
+                                          "size" : 28.0
+                                       },
+                                       "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
+                                       "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                       "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
                                     },
-                                    "skipInvisibleElements" : false
+                                    "text" : ""
                                  }
                               ],
                               "position" : {
@@ -6593,14 +6060,10 @@
                                     "value" : -10.0
                                  }
                               },
-                              "recountObjectsBoxes" : true,
                               "skin" : {
-                                 "_typeName" : "SimpleScrollableAreaSkin",
-                                 "arrowColor" : [ 0.19607843458652496, 0.19607843458652496, 0.19607843458652496, 1.0 ],
-                                 "arrowPadding" : 3.0,
-                                 "backgroundColor" : [ 0.90196079015731812, 0.90196079015731812, 0.90196079015731812, 1.0 ],
-                                 "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                 "borderWidth" : 1.0,
+                                 "_typeName" : "HorizontalLayoutSkin",
+                                 "adjustment" : 1,
+                                 "align" : 1,
                                  "box" : {
                                     "_typeName" : "RelativeBox",
                                     "height" : {
@@ -6617,13 +6080,151 @@
                                        "value" : 0.0
                                     }
                                  },
-                                 "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
-                                 "horScrollBarEnabled" : true,
-                                 "scrollBarWidth" : 16.0,
-                                 "scrollStep" : 10.0,
-                                 "useGradient" : true,
-                                 "vertScrollBarEnabled" : true
-                              }
+                                 "padding" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 10.0
+                                 }
+                              },
+                              "skipInvisibleElements" : false
+                           },
+                           {
+                              "_typeName" : "LinearLayout",
+                              "list" : [
+                                 {
+                                    "_typeName" : "StaticLabel",
+                                    "adjustSize" : true,
+                                    "box" : {
+                                       "_typeName" : "RelativeBox",
+                                       "height" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 0,
+                                          "value" : 0.0
+                                       },
+                                       "offset" : {
+                                          "_empty" : true
+                                       },
+                                       "width" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 0,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "color" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                    "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                    "position" : {
+                                       "_typeName" : "AligningOffset",
+                                       "horAlign" : 0,
+                                       "horOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       },
+                                       "vertAlign" : 1,
+                                       "vertOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "properties" : {
+                                       "_typeName" : "AlignProperties",
+                                       "enableStacking" : false,
+                                       "font" : {
+                                          "_typeName" : "FontDesc",
+                                          "family" : "Roboto",
+                                          "size" : 28.0
+                                       },
+                                       "horAlign" : 0,
+                                       "vertAlign" : 0
+                                    },
+                                    "text" : "Путь:"
+                                 },
+                                 {
+                                    "_name" : "enemy_file",
+                                    "_typeName" : "TextBox",
+                                    "filter" : {
+                                       "_empty" : true
+                                    },
+                                    "position" : {
+                                       "_typeName" : "AligningOffset",
+                                       "horAlign" : 0,
+                                       "horOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 10.0
+                                       },
+                                       "vertAlign" : 1,
+                                       "vertOffset" : {
+                                          "_typeName" : "RelativeValue",
+                                          "type" : 1,
+                                          "value" : 0.0
+                                       }
+                                    },
+                                    "skin" : {
+                                       "_typeName" : "SimpleRectangleTextBoxSkin",
+                                       "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
+                                       "borderWidth" : 1.0,
+                                       "box" : {
+                                          "_typeName" : "PixelBox",
+                                          "height" : 48.0,
+                                          "width" : 300.0
+                                       },
+                                       "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                       "font" : {
+                                          "_typeName" : "FontDesc",
+                                          "family" : "Roboto",
+                                          "size" : 28.0
+                                       },
+                                       "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
+                                       "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                       "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
+                                    },
+                                    "text" : ""
+                                 }
+                              ],
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 0,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 },
+                                 "vertAlign" : 0,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -10.0
+                                 }
+                              },
+                              "skin" : {
+                                 "_typeName" : "HorizontalLayoutSkin",
+                                 "adjustment" : 1,
+                                 "align" : 1,
+                                 "box" : {
+                                    "_typeName" : "RelativeBox",
+                                    "height" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    },
+                                    "offset" : {
+                                       "_empty" : true
+                                    },
+                                    "width" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    }
+                                 },
+                                 "padding" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 10.0
+                                 }
+                              },
+                              "skipInvisibleElements" : false
                            }
                         ],
                         "position" : {
@@ -6688,7 +6289,7 @@
                }
             },
             {
-               "_key" : 7,
+               "_key" : 8,
                "_value" : {
                   "_name" : "fight_enemy",
                   "_typeName" : "CanvasLayout",
@@ -7870,7 +7471,7 @@
                                     "text" : "Путь:"
                                  },
                                  {
-                                    "_name" : "resource_file",
+                                    "_name" : "fight_file",
                                     "_typeName" : "TextBox",
                                     "filter" : {
                                        "_empty" : true
@@ -7956,100 +7557,8 @@
                               "skipInvisibleElements" : false
                            },
                            {
-                              "_typeName" : "LinearLayout",
-                              "list" : [
-                                 {
-                                    "_typeName" : "StaticLabel",
-                                    "adjustSize" : true,
-                                    "box" : {
-                                       "_typeName" : "RelativeBox",
-                                       "height" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 0,
-                                          "value" : 0.0
-                                       },
-                                       "offset" : {
-                                          "_empty" : true
-                                       },
-                                       "width" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 0,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                    "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                    "position" : {
-                                       "_typeName" : "AligningOffset",
-                                       "horAlign" : 0,
-                                       "horOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       },
-                                       "vertAlign" : 1,
-                                       "vertOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "properties" : {
-                                       "_typeName" : "AlignProperties",
-                                       "enableStacking" : false,
-                                       "font" : {
-                                          "_typeName" : "FontDesc",
-                                          "family" : "Roboto",
-                                          "size" : 28.0
-                                       },
-                                       "horAlign" : 0,
-                                       "vertAlign" : 0
-                                    },
-                                    "text" : "Дроп:"
-                                 },
-                                 {
-                                    "_name" : "fight_drop",
-                                    "_typeName" : "TextBox",
-                                    "filter" : {
-                                       "_empty" : true
-                                    },
-                                    "position" : {
-                                       "_typeName" : "AligningOffset",
-                                       "horAlign" : 0,
-                                       "horOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 10.0
-                                       },
-                                       "vertAlign" : 1,
-                                       "vertOffset" : {
-                                          "_typeName" : "RelativeValue",
-                                          "type" : 1,
-                                          "value" : 0.0
-                                       }
-                                    },
-                                    "skin" : {
-                                       "_typeName" : "SimpleRectangleTextBoxSkin",
-                                       "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                       "borderWidth" : 1.0,
-                                       "box" : {
-                                          "_typeName" : "PixelBox",
-                                          "height" : 48.0,
-                                          "width" : 300.0
-                                       },
-                                       "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                       "font" : {
-                                          "_typeName" : "FontDesc",
-                                          "family" : "Roboto",
-                                          "size" : 28.0
-                                       },
-                                       "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                       "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                       "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                    },
-                                    "text" : ""
-                                 }
-                              ],
+                              "_name" : "fight_add_drop",
+                              "_typeName" : "Button",
                               "position" : {
                                  "_typeName" : "AligningOffset",
                                  "horAlign" : 0,
@@ -8066,365 +7575,34 @@
                                  }
                               },
                               "skin" : {
-                                 "_typeName" : "HorizontalLayoutSkin",
-                                 "adjustment" : 1,
-                                 "align" : 1,
+                                 "_typeName" : "SimpleRectangleButtonSkin",
+                                 "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "borderWidth" : 1.0,
                                  "box" : {
-                                    "_typeName" : "RelativeBox",
-                                    "height" : {
-                                       "_typeName" : "RelativeValue",
-                                       "type" : 0,
-                                       "value" : 0.0
-                                    },
-                                    "offset" : {
-                                       "_empty" : true
-                                    },
-                                    "width" : {
-                                       "_typeName" : "RelativeValue",
-                                       "type" : 0,
-                                       "value" : 0.0
-                                    }
+                                    "_typeName" : "PixelBox",
+                                    "height" : 100.0,
+                                    "width" : 100.0
                                  },
-                                 "padding" : {
-                                    "_typeName" : "RelativeValue",
-                                    "type" : 1,
-                                    "value" : 10.0
-                                 }
-                              },
-                              "skipInvisibleElements" : false
+                                 "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                                 "font" : {
+                                    "_typeName" : "FontDesc",
+                                    "family" : "Roboto",
+                                    "outlineWidth" : 1.0,
+                                    "size" : 28.0
+                                 },
+                                 "text" : "Add",
+                                 "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                 "useGradient" : true
+                              }
                            },
                            {
                               "_typeName" : "ScrollableArea",
                               "objects" : [
                                  {
-                                    "_name" : "drop_f",
+                                    "_name" : "fight_drop_list",
                                     "_typeName" : "LinearLayout",
-                                    "list" : [
-                                       {
-                                          "_name" : "drop1",
-                                          "_typeName" : "LinearLayout",
-                                          "list" : [
-                                             {
-                                                "_typeName" : "LinearLayout",
-                                                "list" : [
-                                                   {
-                                                      "_typeName" : "StaticLabel",
-                                                      "adjustSize" : true,
-                                                      "box" : {
-                                                         "_typeName" : "RelativeBox",
-                                                         "height" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         },
-                                                         "offset" : {
-                                                            "_empty" : true
-                                                         },
-                                                         "width" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                      "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "properties" : {
-                                                         "_typeName" : "AlignProperties",
-                                                         "enableStacking" : false,
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "horAlign" : 0,
-                                                         "vertAlign" : 0
-                                                      },
-                                                      "text" : "Имя:"
-                                                   },
-                                                   {
-                                                      "_name" : "drop_name",
-                                                      "_typeName" : "TextBox",
-                                                      "filter" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 10.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "skin" : {
-                                                         "_typeName" : "SimpleRectangleTextBoxSkin",
-                                                         "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                                         "borderWidth" : 1.0,
-                                                         "box" : {
-                                                            "_typeName" : "PixelBox",
-                                                            "height" : 48.0,
-                                                            "width" : 300.0
-                                                         },
-                                                         "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                                         "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                                      },
-                                                      "text" : ""
-                                                   }
-                                                ],
-                                                "position" : {
-                                                   "_typeName" : "AligningOffset",
-                                                   "horAlign" : 1,
-                                                   "horOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   },
-                                                   "vertAlign" : 0,
-                                                   "vertOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   }
-                                                },
-                                                "skin" : {
-                                                   "_typeName" : "HorizontalLayoutSkin",
-                                                   "adjustment" : 1,
-                                                   "align" : 1,
-                                                   "box" : {
-                                                      "_typeName" : "RelativeBox",
-                                                      "height" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      },
-                                                      "offset" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "width" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      }
-                                                   },
-                                                   "padding" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 10.0
-                                                   }
-                                                },
-                                                "skipInvisibleElements" : false
-                                             },
-                                             {
-                                                "_typeName" : "LinearLayout",
-                                                "list" : [
-                                                   {
-                                                      "_typeName" : "StaticLabel",
-                                                      "adjustSize" : true,
-                                                      "box" : {
-                                                         "_typeName" : "RelativeBox",
-                                                         "height" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         },
-                                                         "offset" : {
-                                                            "_empty" : true
-                                                         },
-                                                         "width" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 0,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "color" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                      "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "properties" : {
-                                                         "_typeName" : "AlignProperties",
-                                                         "enableStacking" : false,
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "horAlign" : 0,
-                                                         "vertAlign" : 0
-                                                      },
-                                                      "text" : "Шанс:"
-                                                   },
-                                                   {
-                                                      "_name" : "drop_chance",
-                                                      "_typeName" : "TextBox",
-                                                      "filter" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "position" : {
-                                                         "_typeName" : "AligningOffset",
-                                                         "horAlign" : 0,
-                                                         "horOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 10.0
-                                                         },
-                                                         "vertAlign" : 1,
-                                                         "vertOffset" : {
-                                                            "_typeName" : "RelativeValue",
-                                                            "type" : 1,
-                                                            "value" : 0.0
-                                                         }
-                                                      },
-                                                      "skin" : {
-                                                         "_typeName" : "SimpleRectangleTextBoxSkin",
-                                                         "borderColor" : [ 0.19607843458652496, 0.15686275064945221, 0.70588237047195435, 1.0 ],
-                                                         "borderWidth" : 1.0,
-                                                         "box" : {
-                                                            "_typeName" : "PixelBox",
-                                                            "height" : 48.0,
-                                                            "width" : 300.0
-                                                         },
-                                                         "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ],
-                                                         "font" : {
-                                                            "_typeName" : "FontDesc",
-                                                            "family" : "Roboto",
-                                                            "size" : 28.0
-                                                         },
-                                                         "selectionColor" : [ 0.7450980544090271, 0.82352942228317261, 1.0, 1.0 ],
-                                                         "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-                                                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
-                                                      },
-                                                      "text" : ""
-                                                   }
-                                                ],
-                                                "position" : {
-                                                   "_typeName" : "AligningOffset",
-                                                   "horAlign" : 1,
-                                                   "horOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 0.0
-                                                   },
-                                                   "vertAlign" : 0,
-                                                   "vertOffset" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : -10.0
-                                                   }
-                                                },
-                                                "skin" : {
-                                                   "_typeName" : "HorizontalLayoutSkin",
-                                                   "adjustment" : 1,
-                                                   "align" : 1,
-                                                   "box" : {
-                                                      "_typeName" : "RelativeBox",
-                                                      "height" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      },
-                                                      "offset" : {
-                                                         "_empty" : true
-                                                      },
-                                                      "width" : {
-                                                         "_typeName" : "RelativeValue",
-                                                         "type" : 0,
-                                                         "value" : 0.0
-                                                      }
-                                                   },
-                                                   "padding" : {
-                                                      "_typeName" : "RelativeValue",
-                                                      "type" : 1,
-                                                      "value" : 10.0
-                                                   }
-                                                },
-                                                "skipInvisibleElements" : false
-                                             }
-                                          ],
-                                          "position" : {
-                                             "_typeName" : "AligningOffset",
-                                             "horAlign" : 1,
-                                             "horOffset" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : 0.0
-                                             },
-                                             "vertAlign" : 0,
-                                             "vertOffset" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : 0.0
-                                             }
-                                          },
-                                          "skin" : {
-                                             "_typeName" : "VerticalLayoutSkin",
-                                             "adjustment" : 1,
-                                             "align" : 1,
-                                             "box" : {
-                                                "_typeName" : "RelativeBox",
-                                                "height" : {
-                                                   "_typeName" : "RelativeValue",
-                                                   "type" : 0,
-                                                   "value" : 0.0
-                                                },
-                                                "offset" : {
-                                                   "_empty" : true
-                                                },
-                                                "width" : {
-                                                   "_typeName" : "RelativeValue",
-                                                   "type" : 0,
-                                                   "value" : 0.0
-                                                }
-                                             },
-                                             "padding" : {
-                                                "_typeName" : "RelativeValue",
-                                                "type" : 1,
-                                                "value" : -10.0
-                                             }
-                                          },
-                                          "skipInvisibleElements" : false
-                                       }
-                                    ],
+                                    "list" : [],
                                     "position" : {
                                        "_typeName" : "AligningOffset",
                                        "horAlign" : 0,
