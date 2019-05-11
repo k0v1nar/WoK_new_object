@@ -20,7 +20,7 @@
    },
    "list" : [
       {
-         "_name" : "save",
+         "_name" : "saveB",
          "_typeName" : "Button",
          "position" : {
             "_typeName" : "AligningOffset",
@@ -60,7 +60,7 @@
          }
       },
       {
-         "_name" : "Load",
+         "_name" : "loadB",
          "_typeName" : "Button",
          "position" : {
             "_typeName" : "AligningOffset",
@@ -100,7 +100,7 @@
          }
       },
       {
-         "_name" : "create",
+         "_name" : "createB",
          "_typeName" : "Button",
          "position" : {
             "_typeName" : "AligningOffset",
@@ -140,8 +140,9 @@
          }
       },
       {
-         "_name" : "add",
+         "_name" : "addB",
          "_typeName" : "Button",
+         "_visible" : false,
          "position" : {
             "_typeName" : "AligningOffset",
             "horAlign" : 0,
@@ -180,8 +181,9 @@
          }
       },
       {
-         "_name" : "update",
+         "_name" : "loadOB",
          "_typeName" : "Button",
+         "_visible" : false,
          "position" : {
             "_typeName" : "AligningOffset",
             "horAlign" : 0,
@@ -213,114 +215,16 @@
                "outlineWidth" : 1.0,
                "size" : 28.0
             },
-            "text" : "Update",
+            "text" : "LIIDBFO",
             "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
             "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
             "useGradient" : true
          }
       },
       {
-         "_name" : "list_object",
-         "_typeName" : "ScrollableArea",
-         "objects" : [
-            {
-               "_name" : "obj_list",
-               "_typeName" : "LinearLayout",
-               "list" : [],
-               "position" : {
-                  "_typeName" : "AligningOffset",
-                  "horAlign" : 1,
-                  "horOffset" : {
-                     "_typeName" : "RelativeValue",
-                     "type" : 1,
-                     "value" : 0.0
-                  },
-                  "vertAlign" : 1,
-                  "vertOffset" : {
-                     "_typeName" : "RelativeValue",
-                     "type" : 1,
-                     "value" : 0.0
-                  }
-               },
-               "skin" : {
-                  "_typeName" : "VerticalLayoutSkin",
-                  "adjustment" : 1,
-                  "align" : 1,
-                  "box" : {
-                     "_typeName" : "RelativeBox",
-                     "height" : {
-                        "_typeName" : "RelativeValue",
-                        "type" : 0,
-                        "value" : 0.0
-                     },
-                     "offset" : {
-                        "_empty" : true
-                     },
-                     "width" : {
-                        "_typeName" : "RelativeValue",
-                        "type" : 0,
-                        "value" : 0.0
-                     }
-                  },
-                  "padding" : {
-                     "_typeName" : "RelativeValue",
-                     "type" : 1,
-                     "value" : -0.0
-                  }
-               },
-               "skipInvisibleElements" : false
-            }
-         ],
-         "position" : {
-            "_typeName" : "AligningOffset",
-            "horAlign" : 0,
-            "horOffset" : {
-               "_typeName" : "RelativeValue",
-               "type" : 1,
-               "value" : 0.0
-            },
-            "vertAlign" : 2,
-            "vertOffset" : {
-               "_typeName" : "RelativeValue",
-               "type" : 1,
-               "value" : 0.0
-            }
-         },
-         "recountObjectsBoxes" : true,
-         "skin" : {
-            "_typeName" : "SimpleScrollableAreaSkin",
-            "arrowColor" : [ 0.19607843458652496, 0.19607843458652496, 0.19607843458652496, 1.0 ],
-            "arrowPadding" : 3.0,
-            "backgroundColor" : [ 0.90196079015731812, 0.90196079015731812, 0.90196079015731812, 1.0 ],
-            "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
-            "borderWidth" : 1.0,
-            "box" : {
-               "_typeName" : "RelativeBox",
-               "height" : {
-                  "_typeName" : "RelativeValue",
-                  "type" : 2,
-                  "value" : 0.89999997615814209
-               },
-               "offset" : {
-                  "_empty" : true
-               },
-               "width" : {
-                  "_typeName" : "RelativeValue",
-                  "type" : 1,
-                  "value" : 500.0
-               }
-            },
-            "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
-            "horScrollBarEnabled" : true,
-            "scrollBarWidth" : 16.0,
-            "scrollStep" : 10.0,
-            "useGradient" : true,
-            "vertScrollBarEnabled" : true
-         }
-      },
-      {
          "_name" : "editor",
          "_typeName" : "SelectingWidget",
+         "_visible" : false,
          "adjustment" : 1,
          "box" : {
             "_typeName" : "RelativeBox",
@@ -335,7 +239,7 @@
             "width" : {
                "_typeName" : "RelativeValue",
                "type" : 1,
-               "value" : 500.0
+               "value" : 700.0
             }
          },
          "currentID" : 0,
@@ -7766,6 +7670,978 @@
                "value" : 516.0
             },
             "vertAlign" : 0,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            }
+         }
+      },
+      {
+         "_name" : "selector",
+         "_typeName" : "SelectingWidget",
+         "adjustment" : 0,
+         "box" : {
+            "_typeName" : "RelativeBox",
+            "height" : {
+               "_typeName" : "RelativeValue",
+               "type" : 3,
+               "value" : 100.0
+            },
+            "offset" : {
+               "_empty" : true
+            },
+            "width" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0.0
+            }
+         },
+         "currentID" : 1,
+         "objects" : [
+            {
+               "_key" : 0,
+               "_value" : {
+                  "_typeName" : "ScrollableArea",
+                  "objects" : [
+                     {
+                        "_typeName" : "LinearLayout",
+                        "list" : [
+                           {
+                              "_name" : "backB",
+                              "_typeName" : "Button",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 },
+                                 "vertAlign" : 0,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 }
+                              },
+                              "skin" : {
+                                 "_typeName" : "SimpleRectangleButtonSkin",
+                                 "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "borderWidth" : 1.0,
+                                 "box" : {
+                                    "_typeName" : "PixelBox",
+                                    "height" : 100.0,
+                                    "width" : 100.0
+                                 },
+                                 "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                                 "font" : {
+                                    "_typeName" : "FontDesc",
+                                    "family" : "Roboto",
+                                    "outlineWidth" : 1.0,
+                                    "size" : 28.0
+                                 },
+                                 "text" : "Back",
+                                 "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                                 "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                                 "useGradient" : true
+                              }
+                           },
+                           {
+                              "_name" : "obj_list",
+                              "_typeName" : "LinearLayout",
+                              "list" : [],
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0.0
+                                 },
+                                 "vertAlign" : 0,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -0.0
+                                 }
+                              },
+                              "skin" : {
+                                 "_typeName" : "VerticalLayoutSkin",
+                                 "adjustment" : 1,
+                                 "align" : 0,
+                                 "box" : {
+                                    "_typeName" : "RelativeBox",
+                                    "height" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    },
+                                    "offset" : {
+                                       "_empty" : true
+                                    },
+                                    "width" : {
+                                       "_typeName" : "RelativeValue",
+                                       "type" : 0,
+                                       "value" : 0.0
+                                    }
+                                 },
+                                 "padding" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -0.0
+                                 }
+                              },
+                              "skipInvisibleElements" : false
+                           }
+                        ],
+                        "position" : {
+                           "_typeName" : "AligningOffset",
+                           "horAlign" : 1,
+                           "horOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           },
+                           "vertAlign" : 1,
+                           "vertOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           }
+                        },
+                        "skin" : {
+                           "_typeName" : "VerticalLayoutSkin",
+                           "adjustment" : 1,
+                           "align" : 1,
+                           "box" : {
+                              "_typeName" : "RelativeBox",
+                              "height" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 0,
+                                 "value" : 0.0
+                              },
+                              "offset" : {
+                                 "_empty" : true
+                              },
+                              "width" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 0,
+                                 "value" : 0.0
+                              }
+                           },
+                           "padding" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : -0.0
+                           }
+                        },
+                        "skipInvisibleElements" : false
+                     }
+                  ],
+                  "position" : {
+                     "_typeName" : "AligningOffset",
+                     "horAlign" : 0,
+                     "horOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0.0
+                     },
+                     "vertAlign" : 2,
+                     "vertOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0.0
+                     }
+                  },
+                  "recountObjectsBoxes" : true,
+                  "skin" : {
+                     "_typeName" : "SimpleScrollableAreaSkin",
+                     "arrowColor" : [ 0.19607843458652496, 0.19607843458652496, 0.19607843458652496, 1.0 ],
+                     "arrowPadding" : 3.0,
+                     "backgroundColor" : [ 0.90196079015731812, 0.90196079015731812, 0.90196079015731812, 1.0 ],
+                     "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                     "borderWidth" : 1.0,
+                     "box" : {
+                        "_typeName" : "RelativeBox",
+                        "height" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 0,
+                           "value" : 0.0
+                        },
+                        "offset" : {
+                           "_empty" : true
+                        },
+                        "width" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 500.0
+                        }
+                     },
+                     "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                     "horScrollBarEnabled" : true,
+                     "scrollBarWidth" : 16.0,
+                     "scrollStep" : 10.0,
+                     "useGradient" : true,
+                     "vertScrollBarEnabled" : true
+                  }
+               }
+            },
+            {
+               "_key" : 1,
+               "_value" : {
+                  "_typeName" : "CanvasLayout",
+                  "adjustment" : 0,
+                  "box" : {
+                     "_typeName" : "RelativeBox",
+                     "height" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 0,
+                        "value" : 0.0
+                     },
+                     "offset" : {
+                        "_empty" : true
+                     },
+                     "width" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 500.0
+                     }
+                  },
+                  "list" : [
+                     {
+                        "_name" : "recipeB",
+                        "_typeName" : "Button",
+                        "position" : {
+                           "_typeName" : "AligningOffset",
+                           "horAlign" : 1,
+                           "horOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           },
+                           "vertAlign" : 0,
+                           "vertOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           }
+                        },
+                        "skin" : {
+                           "_typeName" : "SimpleRectangleButtonSkin",
+                           "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "borderWidth" : 1.0,
+                           "box" : {
+                              "_typeName" : "PixelBox",
+                              "height" : 100.0,
+                              "width" : 200.0
+                           },
+                           "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                           "font" : {
+                              "_typeName" : "FontDesc",
+                              "family" : "Roboto",
+                              "outlineWidth" : 1.0,
+                              "size" : 28.0
+                           },
+                           "text" : "Recipe",
+                           "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                           "useGradient" : true
+                        }
+                     },
+                     {
+                        "_name" : "objB",
+                        "_typeName" : "Button",
+                        "position" : {
+                           "_typeName" : "AligningOffset",
+                           "horAlign" : 1,
+                           "horOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           },
+                           "vertAlign" : 1,
+                           "vertOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 2,
+                              "value" : 0.20000000298023224
+                           }
+                        },
+                        "skin" : {
+                           "_typeName" : "SimpleRectangleButtonSkin",
+                           "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "borderWidth" : 1.0,
+                           "box" : {
+                              "_typeName" : "PixelBox",
+                              "height" : 100.0,
+                              "width" : 200.0
+                           },
+                           "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                           "font" : {
+                              "_typeName" : "FontDesc",
+                              "family" : "Roboto",
+                              "outlineWidth" : 1.0,
+                              "size" : 28.0
+                           },
+                           "text" : "Obj",
+                           "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                           "useGradient" : true
+                        }
+                     },
+                     {
+                        "_name" : "worldB",
+                        "_typeName" : "Button",
+                        "position" : {
+                           "_typeName" : "AligningOffset",
+                           "horAlign" : 1,
+                           "horOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           },
+                           "vertAlign" : 1,
+                           "vertOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 2,
+                              "value" : -0.10000000149011612
+                           }
+                        },
+                        "skin" : {
+                           "_typeName" : "SimpleRectangleButtonSkin",
+                           "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "borderWidth" : 1.0,
+                           "box" : {
+                              "_typeName" : "PixelBox",
+                              "height" : 100.0,
+                              "width" : 200.0
+                           },
+                           "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                           "font" : {
+                              "_typeName" : "FontDesc",
+                              "family" : "Roboto",
+                              "outlineWidth" : 1.0,
+                              "size" : 28.0
+                           },
+                           "text" : "World",
+                           "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                           "useGradient" : true
+                        }
+                     },
+                     {
+                        "_name" : "fightB",
+                        "_typeName" : "Button",
+                        "position" : {
+                           "_typeName" : "AligningOffset",
+                           "horAlign" : 1,
+                           "horOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 1,
+                              "value" : 0.0
+                           },
+                           "vertAlign" : 2,
+                           "vertOffset" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 2,
+                              "value" : 0.05000000074505806
+                           }
+                        },
+                        "skin" : {
+                           "_typeName" : "SimpleRectangleButtonSkin",
+                           "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "borderWidth" : 1.0,
+                           "box" : {
+                              "_typeName" : "PixelBox",
+                              "height" : 100.0,
+                              "width" : 200.0
+                           },
+                           "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                           "font" : {
+                              "_typeName" : "FontDesc",
+                              "family" : "Roboto",
+                              "outlineWidth" : 1.0,
+                              "size" : 28.0
+                           },
+                           "text" : "Fight",
+                           "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                           "useGradient" : true
+                        }
+                     }
+                  ],
+                  "position" : {
+                     "_typeName" : "AligningOffset",
+                     "horAlign" : 0,
+                     "horOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0.0
+                     },
+                     "vertAlign" : 2,
+                     "vertOffset" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 1,
+                        "value" : 0.0
+                     }
+                  }
+               }
+            }
+         ],
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 0,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            },
+            "vertAlign" : 2,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            }
+         }
+      },
+      {
+         "_name" : "ch_list",
+         "_typeName" : "CanvasLayout",
+         "_visible" : false,
+         "adjustment" : 0,
+         "box" : {
+            "_typeName" : "PixelBox",
+            "height" : 900.0,
+            "width" : 500.0
+         },
+         "list" : [
+            {
+               "_typeName" : "StaticFilledRect",
+               "box" : {
+                  "_typeName" : "RelativeBox",
+                  "height" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 0,
+                     "value" : 0.0
+                  },
+                  "offset" : {
+                     "_empty" : true
+                  },
+                  "width" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 0,
+                     "value" : 0.0
+                  }
+               },
+               "color" : [ 0.0, 0.0, 0.0, 1.0 ],
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 1,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  },
+                  "vertAlign" : 1,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  }
+               }
+            },
+            {
+               "_typeName" : "StaticFilledRect",
+               "box" : {
+                  "_typeName" : "RelativeBox",
+                  "height" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 3,
+                     "value" : 4.0
+                  },
+                  "offset" : {
+                     "_empty" : true
+                  },
+                  "width" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 3,
+                     "value" : 4.0
+                  }
+               },
+               "color" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 1,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  },
+                  "vertAlign" : 1,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  }
+               }
+            },
+            {
+               "_typeName" : "LinearLayout",
+               "list" : [
+                  {
+                     "_name" : "recipe_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Рецепт",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  },
+                  {
+                     "_name" : "obj_res_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : -0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Ресурс",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  },
+                  {
+                     "_name" : "obj_weap_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : -0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Оружие",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  },
+                  {
+                     "_name" : "obj_pot_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : -0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Зелье",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  },
+                  {
+                     "_name" : "obj_arm_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : -0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Броня",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  },
+                  {
+                     "_name" : "world_fon_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : -0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Фон",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  },
+                  {
+                     "_name" : "world_obj_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : -0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Объект",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  },
+                  {
+                     "_name" : "world_enemy_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : -0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Враг",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  },
+                  {
+                     "_name" : "fight_ch_b",
+                     "_typeName" : "Button",
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 1,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        },
+                        "vertAlign" : 0,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : -0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "SimpleRectangleButtonSkin",
+                        "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "borderWidth" : 1.0,
+                        "box" : {
+                           "_typeName" : "PixelBox",
+                           "height" : 100.0,
+                           "width" : 400.0
+                        },
+                        "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                        "font" : {
+                           "_typeName" : "FontDesc",
+                           "family" : "Roboto",
+                           "outlineWidth" : 1.0,
+                           "size" : 28.0
+                        },
+                        "text" : "Бой",
+                        "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                        "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                        "useGradient" : true
+                     }
+                  }
+               ],
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 0,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  },
+                  "vertAlign" : 0,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  }
+               },
+               "skin" : {
+                  "_typeName" : "VerticalLayoutSkin",
+                  "adjustment" : 1,
+                  "align" : 1,
+                  "box" : {
+                     "_typeName" : "RelativeBox",
+                     "height" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 0,
+                        "value" : 0.0
+                     },
+                     "offset" : {
+                        "_empty" : true
+                     },
+                     "width" : {
+                        "_typeName" : "RelativeValue",
+                        "type" : 0,
+                        "value" : 0.0
+                     }
+                  },
+                  "padding" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : -0.0
+                  }
+               },
+               "skipInvisibleElements" : false
+            },
+            {
+               "_name" : "back_ch_b",
+               "_typeName" : "Button",
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 2,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  },
+                  "vertAlign" : 0,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0.0
+                  }
+               },
+               "skin" : {
+                  "_typeName" : "SimpleRectangleButtonSkin",
+                  "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                  "borderWidth" : 1.0,
+                  "box" : {
+                     "_typeName" : "PixelBox",
+                     "height" : 48.0,
+                     "width" : 100.0
+                  },
+                  "fillColor" : [ 0.78431373834609985, 0.78431373834609985, 0.78431373834609985, 1.0 ],
+                  "font" : {
+                     "_typeName" : "FontDesc",
+                     "family" : "Roboto",
+                     "outlineWidth" : 1.0,
+                     "size" : 28.0
+                  },
+                  "text" : "Back",
+                  "textColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                  "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                  "useGradient" : true
+               }
+            }
+         ],
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 1,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0.0
+            },
+            "vertAlign" : 1,
             "vertOffset" : {
                "_typeName" : "RelativeValue",
                "type" : 1,

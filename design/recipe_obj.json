@@ -5,7 +5,7 @@
    "box" : {
       "_typeName" : "PixelBox",
       "height" : 50.0,
-      "width" : 500.0
+      "width" : 700.0
    },
    "list" : [
       {
@@ -184,6 +184,137 @@
                         "textOutlineColor" : [ 1.0, 1.0, 1.0, 1.0 ]
                      },
                      "text" : ""
+                  },
+                  {
+                     "_typeName" : "LinearLayout",
+                     "list" : [
+                        {
+                           "_typeName" : "StaticLabel",
+                           "adjustSize" : true,
+                           "box" : {
+                              "_typeName" : "RelativeBox",
+                              "height" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 0,
+                                 "value" : 0.0
+                              },
+                              "offset" : {
+                                 "_empty" : true
+                              },
+                              "width" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 0,
+                                 "value" : 0.0
+                              }
+                           },
+                           "color" : [ 0.0, 0.0, 0.0, 1.0 ],
+                           "outlineColor" : [ 1.0, 1.0, 1.0, 1.0 ],
+                           "position" : {
+                              "_typeName" : "AligningOffset",
+                              "horAlign" : 0,
+                              "horOffset" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 1,
+                                 "value" : 0.0
+                              },
+                              "vertAlign" : 1,
+                              "vertOffset" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 1,
+                                 "value" : 0.0
+                              }
+                           },
+                           "properties" : {
+                              "_typeName" : "AlignProperties",
+                              "enableStacking" : false,
+                              "font" : {
+                                 "_typeName" : "FontDesc",
+                                 "family" : "Roboto",
+                                 "size" : 28.0
+                              },
+                              "horAlign" : 0,
+                              "vertAlign" : 0
+                           },
+                           "text" : "Тратится?"
+                        },
+                        {
+                           "_name" : "ing_use",
+                           "_typeName" : "CheckBox",
+                           "checked" : false,
+                           "position" : {
+                              "_typeName" : "AligningOffset",
+                              "horAlign" : 0,
+                              "horOffset" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 1,
+                                 "value" : 0.0
+                              },
+                              "vertAlign" : 1,
+                              "vertOffset" : {
+                                 "_typeName" : "RelativeValue",
+                                 "type" : 1,
+                                 "value" : 0.0
+                              }
+                           },
+                           "skin" : {
+                              "_typeName" : "RectangleCheckBoxSkin",
+                              "borderColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                              "borderWidth" : 1.0,
+                              "box" : {
+                                 "_typeName" : "PixelBox",
+                                 "height" : 32.0,
+                                 "width" : 32.0
+                              },
+                              "checkImageColor" : [ 0.0, 0.0, 0.0, 1.0 ],
+                              "checkImageHeight" : 24.0,
+                              "checkImageName" : "",
+                              "checkImageWidth" : 24.0,
+                              "fillColor" : [ 1.0, 1.0, 1.0, 1.0 ]
+                           }
+                        }
+                     ],
+                     "position" : {
+                        "_typeName" : "AligningOffset",
+                        "horAlign" : 0,
+                        "horOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 20.0
+                        },
+                        "vertAlign" : 1,
+                        "vertOffset" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        }
+                     },
+                     "skin" : {
+                        "_typeName" : "HorizontalLayoutSkin",
+                        "adjustment" : 1,
+                        "align" : 1,
+                        "box" : {
+                           "_typeName" : "RelativeBox",
+                           "height" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 0,
+                              "value" : 0.0
+                           },
+                           "offset" : {
+                              "_empty" : true
+                           },
+                           "width" : {
+                              "_typeName" : "RelativeValue",
+                              "type" : 0,
+                              "value" : 0.0
+                           }
+                        },
+                        "padding" : {
+                           "_typeName" : "RelativeValue",
+                           "type" : 1,
+                           "value" : 0.0
+                        }
+                     },
+                     "skipInvisibleElements" : false
                   },
                   {
                      "_name" : "ing_del_b",

@@ -39,8 +39,6 @@ class MyApp : public App
 	};
 	struct Recipe
 	{
-		int col;
-		int from;
 		map<string, RecipeD> recipe;
 	};
     
@@ -154,65 +152,140 @@ class MyApp : public App
 	map<string, Item> obj_DB;
 	map<string, map<string, world_RObj>> world_DB;
 
+	int t = 0;
+	int t_o = 0;
+
 	void load()
     {
-		connect(recipe_add_ing, add_string, 0);
-		connect(armor_add_effect, add_string, 1);
-		connect(world_obj_add_drop, add_string, 2);
-		connect(fight_add_drop, add_string, 3);
-		connect(update, edit, false);
+		connect(recipe_add_ing, add_string);
+		connect(armor_add_effect, add_string);
+		connect(world_obj_add_drop, add_string);
+		connect(fight_add_drop, add_string);
+		connect(recipeB, edit_bd, 0);
+		connect(objB, edit_bd, 1);
+		connect(worldB, edit_bd, 2);
+		connect(fightB, edit_bd, 3);
+		connect(backB, back);
+		connect(back_ch_b, hide_close_list, true);
+		connect(addB, hide_close_list, false);
+		connect(recipe_ch_b, choose, 0);
+		connect(obj_res_ch_b, choose, 1);
+		connect(obj_weap_ch_b, choose, 2);
+		connect(obj_pot_ch_b, choose, 3);
+		connect(obj_arm_ch_b, choose, 4);
+		connect(world_fon_ch_b, choose, 5);
+		connect(world_obj_ch_b, choose, 6);
+		connect(world_enemy_ch_b, choose, 7);
+		connect(fight_ch_b, choose, 8);
     }
-	
-	void edit(bool i)
-	{
-		if (i)
-		{
-			editor.show();
-		}
-		if (!i)
-		{
-			editor.hide();
-		}
-	}
 
-	void del_string(int i,int t)
-	{
-		if (t == 0)
-		{
-			recipe_list.get(i);
-		}
-		if (t == 1)
-		{
-			armor_effect_list.get(i);
-		}
-		if (t == 2)
-		{
-			world_obj_drop_list.get(i);
-		}
-		if (t == 3)
-		{
-			fight_drop_list.get(i);
-		}
-	}
-	void add_string(int i)
+	void choose(int i)
 	{
 		if (i == 0)
 		{
-			auto a = recipe_list.load("recipe_obj.json");
-			connect(a.child<Button>("ing_del_b"), del_string, recipe_list.height - 1, i);
+			edit_bd(0);
 		}
-		if (i == 1)
+		else if (i < 5)
+		{
+			edit_bd(1);
+		}
+		else if (i < 8)
+		{
+			edit_bd(2);
+		}
+		else
+		{
+			edit_bd(3);
+		}
+		auto a = obj_list.load("obj.json");
+		connect(a.child<Button>("edit_b"), updateObj, i);
+		design.update();
+	}
+	void updateObj(int i)
+	{
+		editor.select(i);
+		editor.show();
+		t_o = i;
+		design.update();
+	}
+
+	void hide_close_list(bool i)
+	{
+		if (i)
+		{
+			ch_list.hide();
+		}
+		else
+		{
+			ch_list.show();
+		}
+	}
+	void back()
+	{
+		selector.select(1);
+		obj_list.clear();
+		editor.hide();
+		addB.hide();
+		loadOB.hide();
+		design.update();
+	}
+	
+	void edit_bd(int i)
+	{
+		if (t != i || selector.selected()==1)
+		{
+			t = i;
+			addB.show();
+			loadOB.show();
+			selector.select(0);
+			obj_list.clear();
+			design.update();
+		}
+	}
+	
+	void del_string(DrawObj a)
+	{
+		if (t == 0)
+		{
+			recipe_list.remove(a);
+		}
+		if (t == 1)
+		{
+			armor_effect_list.remove(a);
+		}
+		if (t == 2)
+		{
+			world_obj_drop_list.remove(a);
+		}
+		if (t == 3)
+		{
+			fight_drop_list.remove(a);
+		}
+		design.update();
+	}
+	void add_string()
+	{
+		if (t == 0)
+		{
+			auto a = recipe_list.load("recipe_obj.json");
+			connect(a.child<Button>("ing_del_b"), del_string, a);
+		}
+		if (t == 1)
 		{
 			auto a = armor_effect_list.load("effect.json");
+			connect(a.child<Button>("effect_del_b"), del_string, a);
 		}
-		if (i == 2)
+		if (t == 2)
 		{
 			auto a = world_obj_drop_list.load("drop.json");
+			connect(a.child<Button>("drop_del_b"), del_string, a);
 		}
-		if (i == 3)
+		if (t == 3)
 		{
 			auto a = fight_drop_list.load("drop.json");
+			connect(a.child<Button>("drop_del_b"), del_string, a);
 		}
+		design.update();
 	}
    	
 	void process(Input input)
@@ -221,26 +294,83 @@ class MyApp : public App
 
     }
 
-    void move()
+	/*void update()
+	{
+		if (t_o == 0)
+		{
+			for (auto a : recipe_list.all())
+			{
+				recipe_DB[recipe_id.text].recipe[a.child<TextBox>("ing_name").text].col = a.child<TextBox>("ing_col").text;
+				recipe_DB[recipe_id.text].recipe[a.child<TextBox>("ing_name").text].use = a.child<CheckBox>("ing_use").isChecked;
+			}
+		}
+		if (t_o == 1)
+		{
+
+		}
+		if (t_o == 2)
+		{
+
+		}
+		if (t_o == 3)
+		{
+
+		}
+		if (t_o == 4)
+		{
+
+		}
+		if (t_o == 5)
+		{
+
+		}
+		if (t_o == 6)
+		{
+
+		}
+		t_o=-1;
+	}
+	*/
+  
+	void save()
     {
         
     }
 
 	//design
-	FromDesign(Button, save);
-	FromDesign(Button, Load);
-	FromDesign(Button, create);
-	FromDesign(Button, add);
-	FromDesign(Button, update);
+	FromDesign(Button, saveB);
+	FromDesign(Button, loadB);
+	FromDesign(Button, createB);
+	FromDesign(Button, addB);
+	FromDesign(Button, loadOB);
+	FromDesign(Button, recipeB);
+	FromDesign(Button, objB);
+	FromDesign(Button, worldB);
+	FromDesign(Button, fightB);
+	FromDesign(Button, backB);
+	FromDesign(Button, back_ch_b);
 	FromDesign(Button, recipe_add_ing);
 	FromDesign(Button, armor_add_effect);
 	FromDesign(Button, world_obj_add_drop);
 	FromDesign(Button, fight_add_drop);
+	FromDesign(Button, recipe_ch_b);
+	FromDesign(Button, obj_res_ch_b);
+	FromDesign(Button, obj_weap_ch_b);
+	FromDesign(Button, obj_pot_ch_b);
+	FromDesign(Button, obj_arm_ch_b);
+	FromDesign(Button, world_fon_ch_b);
+	FromDesign(Button, world_obj_ch_b);
+	FromDesign(Button, world_enemy_ch_b);
+	FromDesign(Button, fight_ch_b);
 	FromDesign(Layout, recipe_list);
+	FromDesign(Layout, obj_list);
 	FromDesign(Layout, armor_effect_list);
 	FromDesign(Layout, world_obj_drop_list);
 	FromDesign(Layout, fight_drop_list);
+	FromDesign(Layout, ch_list);
 	FromDesign(Selector, editor);
+	FromDesign(Selector, selector);
+	FromDesign(TextBox, recipe_id);
 	
 };
 
