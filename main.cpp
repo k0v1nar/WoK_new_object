@@ -104,11 +104,6 @@ class MyApp : public App
 		bool isLeft;
 
 	};
-	struct Resource
-	{
-		int number;
-		bool full() { return number == 20; };
-	};
 	struct Item
 	{
 		string name;
@@ -118,7 +113,6 @@ class MyApp : public App
 		{
 			Armor armor;
 			Weapon weapon;
-			Resource resource;
 			Potion potion;
 		} data;
 	};
@@ -177,6 +171,7 @@ class MyApp : public App
 		connect(world_obj_ch_b, choose, 6);
 		connect(world_enemy_ch_b, choose, 7);
 		connect(fight_ch_b, choose, 8);
+		connect(loadOB, update);
     }
 
 	void choose(int i)
@@ -198,17 +193,62 @@ class MyApp : public App
 			edit_bd(3);
 		}
 		auto a = obj_list.load("obj.json");
-		connect(a.child<Button>("edit_b"), updateObj, i);
+		connect(a.child<Button>("edit_b"), updateObj, i , "name", false);
+		connect(a.child<Button>("del_b"), killObj, a, "name", false);
 		design.update();
+
 	}
-	void updateObj(int i)
+
+	void updateObj(int i, string name, bool tr)
 	{
 		editor.select(i);
 		editor.show();
 		t_o = i;
+		if (t_o == 0)
+		{
+			recipe_id.setText(name);
+			recipe_list.clear();
+			if (tr)
+			{	
+				for (auto a : recipe_DB[name].recipe)
+				{
+					auto ing = recipe_list.load("recipe_obj.json");
+					ing.child<TextBox>("ing_name") << a.first;
+					ing.child<TextBox>("ing_col") << a.second.col;
+					ing.child<CheckBox>("ing_use").setChecked(a.second.use);
+					connect(ing.child<Button>("ing_del_b"), del_string, ing);
+				}
+			}
+		}
+		if (t_o == 1)
+		{
+			resource_id.setText(name);
+			resource_name.setText("");
+			resource_file.setText("");
+			if (tr)
+			{
+				resource_name.setText(obj_DB[name].name);
+				resource_file.setText(obj_DB[name].file);
+			}
+		}
 		design.update();
 	}
-
+	void killObj(DrawObj a,string name, bool tr)
+	{
+		if (tr)
+		{
+			if (t == 0)
+			{
+				recipe_DB.erase(name);
+			}
+			if (t == 1)
+			{
+				obj_DB.erase(name);
+			}
+		}
+		obj_list.remove(a);
+		design.update();
+	}
 	void hide_close_list(bool i)
 	{
 		if (i)
@@ -240,6 +280,35 @@ class MyApp : public App
 			selector.select(0);
 			obj_list.clear();
 			design.update();
+			if (t == 0)
+			{
+				for (auto a_main : recipe_DB)
+				{
+					auto a_second = obj_list.load("obj.json");
+					connect(a_second.child<Button>("edit_b"), updateObj, 0, a_main.first, true);
+					connect(a_second.child<Button>("del_b"), killObj, a_second, a_main.first, true);
+					a_second.child<Label>("name").setText(a_main.first);
+				}
+				design.update();
+			}
+			if (t == 1)
+			{
+				for (auto a_main : obj_DB)
+				{
+					auto a_second = obj_list.load("obj.json");
+					if (a_main.second.type == resources)
+						connect(a_second.child<Button>("edit_b"), updateObj, 1 , a_main.first, true);
+					if (a_main.second.type == weapons)
+						connect(a_second.child<Button>("edit_b"), updateObj, 2, a_main.first, true);
+					if (a_main.second.type == potions)
+						connect(a_second.child<Button>("edit_b"), updateObj, 3, a_main.first, true);
+					if (a_main.second.type == armors)
+						connect(a_second.child<Button>("edit_b"), updateObj, 4, a_main.first, true);
+					connect(a_second.child<Button>("del_b"), killObj, a_second , a_main.first, true);
+					a_second.child<Label>("name").setText(a_main.first);
+				}
+				design.update();
+			}
 		}
 	}
 	
@@ -294,19 +363,22 @@ class MyApp : public App
 
     }
 
-	/*void update()
+	void update()
 	{
 		if (t_o == 0)
 		{
 			for (auto a : recipe_list.all())
 			{
-				recipe_DB[recipe_id.text].recipe[a.child<TextBox>("ing_name").text].col = a.child<TextBox>("ing_col").text;
-				recipe_DB[recipe_id.text].recipe[a.child<TextBox>("ing_name").text].use = a.child<CheckBox>("ing_use").isChecked;
+				auto& ing = recipe_DB[recipe_id.text()].recipe[a.child<TextBox>("ing_name").text()];
+				a.child<TextBox>("ing_col") >> ing.col;
+				ing.use = a.child<CheckBox>("ing_use").isChecked();
 			}
 		}
 		if (t_o == 1)
 		{
-
+			obj_DB[resource_id.text()].name = resource_name.text();
+			obj_DB[resource_id.text()].file = resource_file.text();
+			obj_DB[resource_id.text()].type = resources;
 		}
 		if (t_o == 2)
 		{
@@ -328,9 +400,8 @@ class MyApp : public App
 		{
 
 		}
-		t_o=-1;
 	}
-	*/
+	
   
 	void save()
     {
@@ -371,7 +442,9 @@ class MyApp : public App
 	FromDesign(Selector, editor);
 	FromDesign(Selector, selector);
 	FromDesign(TextBox, recipe_id);
-	
+	FromDesign(TextBox, resource_id);
+	FromDesign(TextBox, resource_name);
+	FromDesign(TextBox, resource_file);
 };
 
 int main(int argc, char** argv)
